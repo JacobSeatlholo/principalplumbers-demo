@@ -1,0 +1,31 @@
+HOW TO PUSH THIS SITE TO YOUR GITHUB REPO
+==========================================
+
+The site is complete in this package: index.html + README.md + .nojekyll
+
+Your git repo (prepared, one commit ahead) is included as:
+  principalplumbers-demo-repo/   (already has remote "origin" set & committed)
+
+Option A — push from a machine where you're logged in to GitHub:
+  1. Copy the folder principalplumbers-demo-repo to your computer
+  2. Open a terminal inside it and run:
+       git push -u origin main
+  3. Enable the live site: GitHub repo → Settings → Pages →
+     Source: "Deploy from a branch" → Branch: main / (root) → Save
+  4. Your site goes live at:
+     https://jacobseatlholo.github.io/principalplumbers-demo/
+
+Option B — push using a Personal Access Token (PAT):
+  1. Create a token: GitHub → Settings → Developer settings →
+     Personal access tokens → Generate (scope: "repo")
+  2. Inside principalplumbers-demo-repo run:
+       git push https://<YOUR_TOKEN>@github.com/JacobSeatlholo/principalplumbers-demo.git main
+
+Option C — upload manually (no git needed):
+  1. GitHub repo page → "Add file" → "Upload files"
+  2. Drag in index.html, README.md and .nojekyll from this zip
+  3. Commit, then enable Pages as in Option A step 3
+
+BEFORE SHOWING THE CLIENT AS LIVE:
+  - Edit the CONFIG block in index.html (search "DEMO CONFIGURATION")
+    and put in the real WhatsApp Business number & phone.
